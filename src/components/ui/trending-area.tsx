@@ -1,5 +1,5 @@
 import { TrendingItem } from "./trending-item";
-import { TrendingItemSkeleton } from "./trending-item-skeleton";
+import { TrendingItemSkeleton } from "./skeleton/trending-item-skeleton";
 
 export const TreadingArea = () => {
   return (
