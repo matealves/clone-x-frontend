@@ -8,6 +8,7 @@ import { Button } from "../ui/button";
 export const SignupForm = () => {
   const router = useRouter();
   const [nameField, setNameField] = useState("");
+  const [lastNameField, setLastNameField] = useState("");
   const [emailField, setEmailField] = useState("");
   const [passwordField, setPasswordField] = useState("");
 
@@ -18,19 +19,28 @@ export const SignupForm = () => {
   return (
     <>
       <Input
-        placeholder="Digite seu nome"
+        placeholder="Nome"
         value={nameField}
         onChange={(t) => setNameField(t)}
       />
-
       <Input
-        placeholder="Digite seu e-mail"
+        placeholder="Sobrenome"
+        value={lastNameField}
+        onChange={(t) => setLastNameField(t)}
+      />
+      <Input
+        placeholder="E-mail"
         value={emailField}
         onChange={(t) => setEmailField(t)}
       />
-
       <Input
-        placeholder="Digite sua senha"
+        placeholder="Senha"
+        value={passwordField}
+        onChange={(t) => setPasswordField(t)}
+        password
+      />
+      <Input
+        placeholder="Confirmar senha"
         value={passwordField}
         onChange={(t) => setPasswordField(t)}
         password
