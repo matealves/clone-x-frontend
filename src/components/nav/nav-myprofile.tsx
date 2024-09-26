@@ -10,12 +10,12 @@ export const NavMyProfile = () => {
         </Link>
       </div>
 
-      <div className="flex-1 overflow-hidden">
+      <div className="flex-1 overflow-hidden text-sm">
         <Link href={`/${user.slug}`} className="block truncate">
           {user.name} {user.lastName}
         </Link>
 
-        <div className="truncate text-sm text-gray-400">
+        <div className="truncate text-xs text-gray-500">
             @{user.slug}
         </div>
       </div>
