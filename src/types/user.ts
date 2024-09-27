@@ -1,7 +1,7 @@
 export type User = {
-  slug: string;
   name: string;
   lastName: string;
+  username: string;
   avatar: string;
   cover?: string;
   bio?: string;

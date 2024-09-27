@@ -15,25 +15,25 @@ export const TweetPost = () => {
         <img
           src={user.avatar}
           alt={user.name}
-          className="size-10 rounded-full"
+          className="size-9 rounded-full"
         />
       </div>
 
       <div className="flex-1">
         <div
-          className="min-h-12 outline-none text-md text-white empty:before:text-gray-500 empty:before:content-[attr(data-placeholder)]"
+          className="min-h-11 outline-none cursor-text text-sm text-white empty:before:text-gray-500 empty:before:content-[attr(data-placeholder)]"
           contentEditable
           role="textbox"
           data-placeholder="O que está acontecendo?"
         ></div>
 
-        <div className="flex justify-between items-center mt-2">
+        <div className="flex justify-between items-center mt-3">
           <div onClick={handleImageUpload} className="cursor-pointer">
-            <FontAwesomeIcon icon={faImage} className="size-6" />
+            <FontAwesomeIcon icon={faImage} className="size-5" />
           </div>
 
-          <div className="w-28">
-            <Button label="Postar" size={2} onClick={handlePostClick} />
+          <div className="w-20">
+            <Button label="Postar" size={3} onClick={handlePostClick} />
           </div>
         </div>
       </div>
