@@ -36,7 +36,7 @@ export const TweetItem = ({ tweet }: Props) => {
 
       <div className="flex-1">
         <div className="flex flex-wrap items-center gap-x-2">
-          <div className="font-extrabold text-sm">
+          <div className="font-bold text-sm">
             <Link href={`/${tweet.user.slug}`} className="">
               {tweet.user.name} {tweet.user.lastName}
             </Link>
@@ -47,7 +47,7 @@ export const TweetItem = ({ tweet }: Props) => {
           </div>
         </div>
 
-        <div className="py-2 text-sm">{tweet.body}</div>
+        <div className="py-2 text-sm text-gray-300">{tweet.body}</div>
         {tweet.image && (
           <div className="w-full">
             <img src={tweet.image} alt="" className="w-full rounded-2xl" />

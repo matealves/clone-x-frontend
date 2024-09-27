@@ -4,7 +4,7 @@ import { user } from "./user";
 export const tweet: Tweet = {
   id: 123,
   user: user,
-  body: "Outro dia Mágico!",
+  body: "Outro dia mágico!",
   image:
     "https://img.freepik.com/fotos-gratis/retrato-3d-de-pessoas_23-2150793856.jpg",
   likeCount: 523,
