@@ -8,7 +8,7 @@ export const Button = ({ label, size, onClick }: Props) => {
   const sizes = {
     1: "h-10 text-md",
     2: "h-8 text-sm",
-    3: "h-7 text-xs",
+    3: "h-7 text-xs lg:text-sm",
     4: "h-6 text-xs",
   };
 
