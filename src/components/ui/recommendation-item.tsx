@@ -29,7 +29,7 @@ export const RecommendationItem = ({ user }: Props) => {
           {user.name} {user.lastName}
         </Link>
 
-        <div className="truncate text-xs text-gray-400">@{user.slug}</div>
+        <div className="truncate text-xs text-gray-500">@{user.slug}</div>
       </div>
 
       <div className="pl-2 w-20">
