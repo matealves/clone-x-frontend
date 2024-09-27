@@ -14,7 +14,7 @@ export const Button = ({ label, size, onClick }: Props) => {
   return (
     <div
       onClick={onClick}
-      className={`flex justify-center items-center cursor-pointer bg-white text-black font-bold rounded-3xl ${sizes[size]}`}
+      className={`flex justify-center items-center cursor-pointer bg-blue-500 text-white font-bold rounded-3xl ${sizes[size]}`}
     >
       {label}
     </div>
