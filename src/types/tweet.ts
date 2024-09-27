@@ -10,5 +10,5 @@ export type Tweet = {
   retweetCount: number;
   liked: boolean;
   retweeted: boolean;
-  dataPost: Date;
+  date: Date;
 };
