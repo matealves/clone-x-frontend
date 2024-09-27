@@ -13,7 +13,7 @@ export const TrendingItem = ({ label, count }: Props) => {
         className="group/item"
       >
         <div className="group-hover/item:underline font-bold">{label}</div>
-        <div className="text-sm text-gray-400">{count} posts</div>
+        <div className="text-sm text-gray-500">{count} posts</div>
       </Link>
     </div>
   );
