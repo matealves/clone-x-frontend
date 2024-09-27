@@ -54,24 +54,24 @@ export const TweetItem = ({ tweet }: Props) => {
           </div>
         )}
 
-        <div className="flex mt-6 text-gray-500">
-          <div className="flex-1">
+        <div className="flex mt-3 text-gray-500 justify-between px-16">
+          <div className="">
             <Link href={`/tweet/${tweet.id}`}>
               <div className="inline-flex items-center gap-2 cursor-pointer">
-                <FontAwesomeIcon icon={faComment} className="size-4" />
+                <FontAwesomeIcon icon={faComment} className="size-5" />
                 <div className="text-sm">{tweet.commentCount}</div>
               </div>
             </Link>
           </div>
 
-          <div className="flex-1">
+          <div className="">
             <div className="inline-flex items-center gap-2 cursor-pointer">
-              <FontAwesomeIcon icon={faRetweet} className="size-4" />
+              <FontAwesomeIcon icon={faRetweet} className="size-5" />
               <div className="text-sm">{tweet.retweetCount}</div>
             </div>
           </div>
 
-          <div className="flex-1">
+          <div className="">
             <div
               onClick={handleLikeButton}
               className={`inline-flex items-center gap-2 cursor-pointer ${
@@ -80,7 +80,7 @@ export const TweetItem = ({ tweet }: Props) => {
             >
               <FontAwesomeIcon
                 icon={liked ? faHeartFilled : faHeart}
-                className="size-4"
+                className="size-5"
               />
               <div className="text-sm">{tweet.likeCount}</div>
             </div>

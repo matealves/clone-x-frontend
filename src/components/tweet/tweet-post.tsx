@@ -28,12 +28,15 @@ export const TweetPost = () => {
         ></div>
 
         <div className="flex justify-between items-center mt-3">
-          <div onClick={handleImageUpload} className="cursor-pointer">
+          <div
+            onClick={handleImageUpload}
+            className="cursor-pointer opacity-50 hover:opacity-100"
+          >
             <FontAwesomeIcon icon={faImage} className="size-5" />
           </div>
 
           <div className="w-20">
-            <Button label="Postar" size={3} onClick={handlePostClick} />
+            <Button label="Postar" size={2} onClick={handlePostClick} />
           </div>
         </div>
       </div>

@@ -42,7 +42,7 @@ export const Input = ({
       }`}
     >
       {icon && (
-        <FontAwesomeIcon icon={icon} className="ml-4 size-6 text-gray-500" />
+        <FontAwesomeIcon icon={icon} className="ml-4 size-5 text-gray-500" />
       )}
       <input
         type={password && !showPassword ? "password" : "text"}

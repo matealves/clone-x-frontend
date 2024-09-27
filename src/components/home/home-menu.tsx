@@ -11,7 +11,7 @@ type Props = {
 
 export const HomeMenu = ({ closeAction }: Props) => {
   return (
-    <div className="lg:hidden fixed inset-0 p-6 bg-black">
+    <div className="lg:hidden fixed inset-0 p-6 bg-black z-10">
       <div className="flex justify-between items-center">
         <Logo size={32} />
 
@@ -29,7 +29,7 @@ export const HomeMenu = ({ closeAction }: Props) => {
 
       <div className="">
         <NavItem href="/home" icon={faHouse} label="Página inicial" />
-        <NavItem href="/profile" icon={faUser} label="Meu perfil" />
+        <NavItem href="/profile" icon={faUser} label="Perfil" />
         <NavLogout />
       </div>
     </div>
