@@ -11,7 +11,7 @@ export const HomeHeader = () => {
 
   return (
     <div>
-      <header className="flex justify-between p-6 lg:px-20  lg:pt-4 lg:pb-1 border-b-2 border-gray-900">
+      <header className="flex justify-between p-6 lg:px-32  lg:pt-4 lg:pb-1 border-b-2 border-gray-900">
         <div className="lg:hidden">
           <Logo size={24} />
         </div>
