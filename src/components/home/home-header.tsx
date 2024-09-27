@@ -15,8 +15,8 @@ export const HomeHeader = () => {
         <div className="lg:hidden">
           <Logo size={24} />
         </div>
-        <div className="hidden lg:block text-md underline decoration-blue-500 decoration-2 underline-offset-8">Para você</div>
-        <div className="hidden lg:block text-md text-gray-500">Seguindo</div>
+        <div className="hidden lg:block text-sm underline decoration-blue-500 decoration-2 underline-offset-8">Para você</div>
+        <div className="hidden lg:block text-sm text-gray-500">Seguindo</div>
 
         <div
           onClick={() => setShowMenu(true)}
