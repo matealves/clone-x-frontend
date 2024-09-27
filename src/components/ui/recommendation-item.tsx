@@ -32,9 +32,9 @@ export const RecommendationItem = ({ user }: Props) => {
         <div className="truncate text-xs text-gray-500">@{user.username}</div>
       </div>
 
-      <div className="pl-2 w-20">
+      <div className="pl-2 w-16">
         {!following && (
-          <Button label="Seguir" onClick={handleFollowButton} size={3} />
+          <Button label="Seguir" onClick={handleFollowButton} size={4} />
         )}
       </div>
     </div>

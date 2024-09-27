@@ -36,7 +36,7 @@ export const TweetPost = () => {
           </div>
 
           <div className="w-20">
-            <Button label="Postar" size={2} onClick={handlePostClick} />
+            <Button label="Postar" size={3} onClick={handlePostClick} />
           </div>
         </div>
       </div>
