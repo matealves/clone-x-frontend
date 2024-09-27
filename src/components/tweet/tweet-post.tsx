@@ -15,13 +15,13 @@ export const TweetPost = () => {
         <img
           src={user.avatar}
           alt={user.name}
-          className="size-12 rounded-full"
+          className="size-10 rounded-full"
         />
       </div>
 
       <div className="flex-1">
         <div
-          className="min-h-14 outline-none text-lg text-white empty:before:text-gray-500 empty:before:content-[attr(data-placeholder)]"
+          className="min-h-12 outline-none text-md text-white empty:before:text-gray-500 empty:before:content-[attr(data-placeholder)]"
           contentEditable
           role="textbox"
           data-placeholder="O que está acontecendo?"
