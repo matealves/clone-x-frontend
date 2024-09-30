@@ -30,9 +30,13 @@ export const Input = ({
   const [showPassword, setShowPassword] = useState(false);
 
   const handleKeyUp = (event: KeyboardEvent<HTMLInputElement>) => {
-    if (event.code.toLowerCase() === "enter" && onEnter) {
+    if (event.key.toLowerCase() === "enter" && onEnter) {
       onEnter();
     }
+  };
+
+  const handleClickSearch = () => {
+    if (onEnter) onEnter();
   };
 
   return (
@@ -42,7 +46,11 @@ export const Input = ({
       }`}
     >
       {icon && (
-        <FontAwesomeIcon icon={icon} className="ml-4 size-5 text-gray-500" />
+        <FontAwesomeIcon
+          icon={icon}
+          className="ml-4 size-5 text-gray-500 cursor-pointer"
+          onClick={handleClickSearch}
+        />
       )}
       <input
         type={password && !showPassword ? "password" : "text"}
