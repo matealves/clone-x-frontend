@@ -1,3 +1,4 @@
+import { ProfileFeed } from "@/components/profile/profile-feed";
 import { Button } from "@/components/ui/button";
 import { GeneralHeader } from "@/components/ui/general-header";
 import { user } from "@/data/user";
@@ -6,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 export default function Page() {
-  const isMe = false;
+  const isMe = true;
 
   return (
     <div className="">
@@ -73,6 +74,8 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <ProfileFeed />
     </div>
   );
 }
