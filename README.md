@@ -12,7 +12,7 @@
 
 # Visão geral
 
-Interface completa da rede social **X**, antigo **Twitter**. Páginas de login, cadastro, feed, perfil, editar perfil etc. Aplicação completa, que será integrada ao backend, desenvolvido em outro repositório.
+Interface completa da rede social **X**, antigo **Twitter**. Páginas de login, cadastro, feed, perfil, editar perfil etc. Aplicação completa, integrada ao backend, desenvolvido em outro repositório.
 <br>
 
 <p id="start"></p>
@@ -22,7 +22,7 @@ Interface completa da rede social **X**, antigo **Twitter**. Páginas de login, 
 #### 1 - Clonar o Repositório
 
 ```sh
-git clone https://github.com/matealves/clone-x-frontend
+git clone https://github.com/matealves/clone-x-frontend.git
 ```
 
 #### 2 - Instalar dependências:
