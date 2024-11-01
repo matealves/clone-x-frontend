@@ -1,13 +1,12 @@
-import { tweet } from "@/data/tweet";
+import { tweets } from "@/data/tweet";
 import { TweetItem } from "../tweet/tweet-item";
 
 export const HomeFeed = () => {
   return (
     <div>
-      <TweetItem tweet={tweet} />
-      <TweetItem tweet={tweet} />
-      <TweetItem tweet={tweet} />
-      <TweetItem tweet={tweet} />
+      {tweets.map((tweet, index) => (
+        <TweetItem tweet={tweet} key={index} />
+      ))}
     </div>
   );
 };
