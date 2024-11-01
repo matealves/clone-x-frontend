@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-
-
 export const metadata: Metadata = {
-  title: "Z",
+  title: "Rede Social / Z",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -14,9 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body>
-        {children}
-      </body>
+      <head>
+        <link rel="icon" href="/logo.png" type="image/png" />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
