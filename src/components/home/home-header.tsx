@@ -11,12 +11,16 @@ export const HomeHeader = () => {
 
   return (
     <div>
-      <header className="flex justify-between p-6 lg:px-32  lg:pt-4 lg:pb-1 border-b-2 border-gray-900">
+      <header className="flex justify-between p-6 md:px-4 lg:px-32  lg:pt-4 lg:pb-1 border-b-2 border-gray-900">
         <div className="lg:hidden">
           <Logo size={24} />
         </div>
-        <div className="hidden lg:block text-sm underline decoration-blue-500 decoration-2 underline-offset-8">Para você</div>
-        <div className="hidden lg:block text-sm text-gray-500">Seguindo</div>
+        <div className="hidden lg:block text-sm underline decoration-blue-500 decoration-2 underline-offset-8 cursor-pointer">
+          Para você
+        </div>
+        <div className="hidden lg:block text-sm text-gray-500 cursor-pointer">
+          Seguindo
+        </div>
 
         <div
           onClick={() => setShowMenu(true)}
@@ -29,4 +33,4 @@ export const HomeHeader = () => {
       </header>
     </div>
   );
-}
+};
