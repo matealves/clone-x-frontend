@@ -1,13 +1,16 @@
-import { tweet } from "@/data/tweet";
+import { Tweet } from "@/types/tweet";
 import { TweetItem } from "../tweet/tweet-item";
 
-export const ProfileFeed = () => {
+type Props = {
+  tweets: Tweet[];
+};
+
+export const ProfileFeed = ({ tweets }: Props) => {
   return (
     <div className="">
-      <TweetItem tweet={tweet} />
-      <TweetItem tweet={tweet} />
-      <TweetItem tweet={tweet} />
-      <TweetItem tweet={tweet} />
+      {tweets.map((tweet, index) => (
+        <TweetItem tweet={tweet} key={index} />
+      ))}
     </div>
   );
 };
