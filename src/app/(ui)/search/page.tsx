@@ -1,7 +1,7 @@
 import { TweetItem } from "@/components/tweet/tweet-item";
 import { GeneralHeader } from "@/components/ui/general-header";
 import { SearchInput } from "@/components/ui/search-input";
-import { tweet } from "@/data/tweet";
+import { tweets } from "@/data/tweet";
 import { redirect } from "next/navigation";
 
 type Props = {
@@ -13,6 +13,12 @@ type Props = {
 export default function Page({ searchParams }: Props) {
   if (!searchParams.q) redirect("/");
 
+  const tweetsSearch = tweets.filter((tweet) =>
+    searchParams?.q
+      ? tweet.body.toLowerCase().includes(searchParams.q.toLowerCase())
+      : []
+  );
+
   return (
     <div className="">
       <GeneralHeader>
@@ -20,9 +26,9 @@ export default function Page({ searchParams }: Props) {
       </GeneralHeader>
 
       <div className="border-t-2 border-gray-900">
-        <TweetItem tweet={tweet} />
-        <TweetItem tweet={tweet} />
-        <TweetItem tweet={tweet} />
+        {tweetsSearch.map((tweet, index) => (
+          <TweetItem tweet={tweet} key={index} />
+        ))}
       </div>
     </div>
   );
