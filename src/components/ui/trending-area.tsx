@@ -7,8 +7,8 @@ export const TreadingArea = () => {
       <h2 className="text-xl p-6"> O que está acontecendo</h2>
 
       <div className="flex flex-col gap-4 p-6 pt-0">
-        <TrendingItem label="#Test" count={1293} />
-        <TrendingItem label="#Test2" count={829} />
+        <TrendingItem label="#RJ" count={1293} />
+        <TrendingItem label="#Libertadores" count={846} />
         <TrendingItemSkeleton />
         <TrendingItemSkeleton />
       </div>
