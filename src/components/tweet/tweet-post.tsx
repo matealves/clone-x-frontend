@@ -5,7 +5,11 @@ import { faImage } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "../ui/button";
 
-export const TweetPost = () => {
+type Props = {
+  placeholder?: string;
+};
+
+export const TweetPost = ({ placeholder }: Props) => {
   const handleImageUpload = () => {};
   const handlePostClick = () => {};
 
@@ -24,7 +28,7 @@ export const TweetPost = () => {
           className="min-h-11 outline-none cursor-text text-sm text-white empty:before:text-gray-500 empty:before:content-[attr(data-placeholder)]"
           contentEditable
           role="textbox"
-          data-placeholder="O que está acontecendo?"
+          data-placeholder={placeholder ?? "O que está acontecendo?"}
         ></div>
 
         <div className="flex justify-between items-center mt-3">
