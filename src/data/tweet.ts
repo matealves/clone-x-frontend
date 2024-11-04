@@ -57,7 +57,7 @@ export const tweets: Tweet[] = [
   {
     id: 124,
     user: user3,
-    body: "Patriu #Morumbi, vamos São Paulo! #Libertadores",
+    body: "Partiu #Morumbi, vamos São Paulo! #Libertadores",
     image: "",
     likeCount: 15,
     commentCount: 1,
