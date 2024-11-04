@@ -47,14 +47,14 @@ export const TweetItem = ({ tweet, hideComments }: Props) => {
             @{tweet.user.username} - {formatRelativeTime(tweet.date)}
           </div>
         </div>
-
-        <div className="py-2 text-sm text-gray-300">{tweet.body}</div>
-        {tweet.image && (
-          <div className="w-full">
-            <img src={tweet.image} alt="" className="w-full rounded-2xl" />
-          </div>
-        )}
-
+        <Link href={`/tweet/${tweet.id}`}>
+          <div className="py-2 text-sm text-gray-300">{tweet.body}</div>
+          {tweet.image && (
+            <div className="w-full">
+              <img src={tweet.image} alt="" className="w-full rounded-2xl" />
+            </div>
+          )}
+        </Link>
         <div className="flex mt-3 text-gray-500 justify-between px-16">
           {!hideComments && (
             <div className="">
@@ -66,7 +66,6 @@ export const TweetItem = ({ tweet, hideComments }: Props) => {
               </Link>
             </div>
           )}
-
           <div className="">
             <div className="inline-flex items-center gap-2 cursor-pointer">
               <FontAwesomeIcon icon={faRetweet} className="size-5" />
